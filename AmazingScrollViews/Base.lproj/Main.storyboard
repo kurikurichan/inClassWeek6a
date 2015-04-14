@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="AmazingScrollViews" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2C5-xa-RSR">
+                                <rect key="frame" x="0.0" y="20" width="600" height="520"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="r4p-Wu-b6O">
+                                        <rect key="frame" x="225" y="0.0" width="150" height="150"/>
+                                        <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UNd-V4-peL">
+                                        <rect key="frame" x="225" y="227" width="150" height="150"/>
+                                        <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Hql-C8-Myp">
+                                        <rect key="frame" x="225" y="485" width="150" height="150"/>
+                                        <color key="backgroundColor" red="1" green="0.40000000600000002" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                            </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XhG-pt-GKk">
+                                <rect key="frame" x="277" y="550" width="65" height="30"/>
+                                <state key="normal" title="Add View">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="2C5-xa-RSR" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" id="5LM-mv-fok"/>
+                            <constraint firstItem="2C5-xa-RSR" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="8av-0d-xig"/>
+                            <constraint firstAttribute="trailing" secondItem="2C5-xa-RSR" secondAttribute="trailing" id="AO7-8o-5OA"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="2C5-xa-RSR" secondAttribute="bottom" constant="60" id="Et6-WM-lLM"/>
+                            <constraint firstAttribute="centerX" secondItem="XhG-pt-GKk" secondAttribute="centerX" constant="-9.5" id="oNo-TJ-QAg"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="XhG-pt-GKk" secondAttribute="bottom" constant="20" id="rvB-3Y-gl2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addViewButton" destination="XhG-pt-GKk" id="C76-2x-3UD"/>
+                        <outlet property="scrollView" destination="2C5-xa-RSR" id="L9D-HZ-m4L"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
